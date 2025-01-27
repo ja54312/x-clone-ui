@@ -1,8 +1,8 @@
 
 //import { imagekit } from "@/utils";
 import Image from "./Image";
-//import PostInfo from "./PostInfo";
-//import PostInteractions from "./PostInteractions";
+import PostInfo from "./PostInfo";
+import PostInteractions from "./PostInteractions";
 //import Video from "./Video";
 import Link from "next/link";
 
@@ -77,7 +77,7 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
                 )}
               </div>
             </Link>
-            {/* <PostInfo /> */}
+            <PostInfo />
           </div>
           {/* TEXT & MEDIA */}
           <Link href={`/lamaWebDev/status/123`}>
@@ -107,7 +107,7 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
           {type === "status" && (
             <span className="text-textGray">8:41 PM · Dec 5, 2024</span>
           )}
-          {/* <PostInteractions /> */}
+          <PostInteractions />
         </div>
       </div>
     </div>
